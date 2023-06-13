@@ -1,0 +1,309 @@
+{
+  "nStates": 9,
+  "initialState": 1,
+  "nControllers": 2,
+  "type": 0,
+  "events": [
+    {
+      "label": "alpha",
+      "id": 1,
+      "observable": [
+        true,
+        false
+      ],
+      "controllable": [
+        false,
+        false
+      ]
+    },
+    {
+      "label": "beta",
+      "id": 2,
+      "observable": [
+        false,
+        true
+      ],
+      "controllable": [
+        false,
+        false
+      ]
+    },
+    {
+      "label": "gamma",
+      "id": 3,
+      "observable": [
+        false,
+        false
+      ],
+      "controllable": [
+        true,
+        true
+      ]
+    },
+    {
+      "label": "delta",
+      "id": 4,
+      "observable": [
+        true,
+        false
+      ],
+      "controllable": [
+        false,
+        false
+      ]
+    },
+    {
+      "label": "mu",
+      "id": 5,
+      "observable": [
+        true,
+        true
+      ],
+      "controllable": [
+        false,
+        false
+      ]
+    }
+  ],
+  "states": [
+    {
+      "label": "0",
+      "id": 1,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": [
+        {
+          "targetStateID": 2,
+          "event": {
+            "label": "gamma",
+            "id": 3,
+            "observable": [
+              false,
+              false
+            ],
+            "controllable": [
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "targetStateID": 3,
+          "event": {
+            "label": "mu",
+            "id": 5,
+            "observable": [
+              true,
+              true
+            ],
+            "controllable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "targetStateID": 4,
+          "event": {
+            "label": "beta",
+            "id": 2,
+            "observable": [
+              false,
+              true
+            ],
+            "controllable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "targetStateID": 5,
+          "event": {
+            "label": "alpha",
+            "id": 1,
+            "observable": [
+              true,
+              false
+            ],
+            "controllable": [
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "1",
+      "id": 2,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": []
+    },
+    {
+      "label": "2",
+      "id": 3,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": [
+        {
+          "targetStateID": 6,
+          "event": {
+            "label": "gamma",
+            "id": 3,
+            "observable": [
+              false,
+              false
+            ],
+            "controllable": [
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "3",
+      "id": 4,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": [
+        {
+          "targetStateID": 3,
+          "event": {
+            "label": "beta",
+            "id": 2,
+            "observable": [
+              false,
+              true
+            ],
+            "controllable": [
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "targetStateID": 8,
+          "event": {
+            "label": "gamma",
+            "id": 3,
+            "observable": [
+              false,
+              false
+            ],
+            "controllable": [
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "targetStateID": 7,
+          "event": {
+            "label": "delta",
+            "id": 4,
+            "observable": [
+              true,
+              false
+            ],
+            "controllable": [
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "4",
+      "id": 5,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": [
+        {
+          "targetStateID": 8,
+          "event": {
+            "label": "gamma",
+            "id": 3,
+            "observable": [
+              false,
+              false
+            ],
+            "controllable": [
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "5",
+      "id": 6,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": []
+    },
+    {
+      "label": "6",
+      "id": 7,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": [
+        {
+          "targetStateID": 9,
+          "event": {
+            "label": "gamma",
+            "id": 3,
+            "observable": [
+              false,
+              false
+            ],
+            "controllable": [
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "7",
+      "id": 8,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": []
+    },
+    {
+      "label": "8",
+      "id": 9,
+      "marked": false,
+      "enablement": false,
+      "disablement": false,
+      "transitions": []
+    }
+  ],
+  "badTransitions": [
+    {
+      "initialStateID": 4,
+      "eventID": 3,
+      "targetStateID": 8
+    },
+    {
+      "initialStateID": 5,
+      "eventID": 3,
+      "targetStateID": 8
+    }
+  ]
+}

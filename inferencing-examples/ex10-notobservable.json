@@ -715,6 +715,11 @@
       "initialStateID": 15,
       "eventID": 7,
       "targetStateID": 22
+    },
+    {
+      "initialStateID": 17,
+      "eventID": 7,
+      "targetStateID": 24
     }
   ]
 }
